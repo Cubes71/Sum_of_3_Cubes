@@ -13,10 +13,10 @@ import os
 # ============================
 # ====== CONFIG (edit) =======
 # ============================
-M_START = 5_310_001
-M_END   = 5_350_000
+M_START = 5_400_001
+M_END   = 5_420_000
 
-CORES = 5                   # runs exactly this many cores regardless of CPU count
+CORES = 16                   # runs exactly this many cores regardless of CPU count
 PROGRESS_INTERVAL = 50      # per worker: print every this many m's processed
 OUTPUT_PATH = "output.txt"
 # ============================
