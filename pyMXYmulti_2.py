@@ -13,8 +13,8 @@ import os
 # ============================
 # ====== CONFIG (edit) =======
 # ============================
-M_START = 5_450_001
-M_END   = 5_500_000
+M_START = 3_200_001
+M_END   = 4_000_000
 
 CORES = 16                   # runs exactly this many cores regardless of CPU count
 PROGRESS_INTERVAL = 50      # per worker: print every this many m's processed
@@ -23,12 +23,12 @@ OUTPUT_PATH = "output.txt"
 
 # ---------- your math (unchanged) ----------
 def calculate_n(m, x, y):
-    return (5 * m + x) ** 3 - (4 * m + y) ** 3 - (4 * m + x) ** 3
+    return -(4 * m + x) ** 3 + (3 * m + y) ** 3 + (3 * m + x) ** 3
 
 def to_XYZ(m, x, y):
-    X = (5 * m + x)
-    Y = -(4 * m + y)
-    Z = -(4 * m + x)
+    X = -(4 * m + x)
+    Y = (3 * m + y)
+    Z = (3 * m + x)
     return X, Y, Z
 
 def process_one_m(m):
@@ -44,14 +44,14 @@ def process_one_m(m):
 
         if n > 0:
             while n > 0:
-                x += 1
-                y += 1
+                x -= 1
+                y -= 1
                 n = calculate_n(m, x, y)
 
         if n < 0:
             while n < 0:
-                x -= 1
-                y -= 1
+                x += 1
+                y += 1
                 n = calculate_n(m, x, y)
 
         if 0 < n < 1000:
