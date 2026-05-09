@@ -11,8 +11,8 @@ import json
 # ============================
 # ====== CONFIG (edit) =======
 # ============================
-M_START = 1_000_001
-M_END   = 2_000_000
+M_START = 2_500_001
+M_END   = 3_000_000
 
 CORES             = 8
 BLOCK_SIZE        = 50
@@ -20,7 +20,7 @@ PROGRESS_INTERVAL = 50
 
 OUTPUT_PATH       = "pyMXYmulti_combined_output.txt"
 CHECKPOINT_FILE   = "checkpoint.json"
-CHECKPOINT_EVERY  = 500   # blocks
+CHECKPOINT_EVERY  = 50   # blocks
 # ============================
 
 
