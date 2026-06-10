@@ -11,10 +11,10 @@ import json
 # ============================
 # ====== CONFIG (edit) =======
 # ============================
-M_START = 3_500_001
-M_END   = 4_000_000
+M_START = 4_000_001
+M_END   = 4_500_000
 
-CORES             = 8
+CORES             = 10
 BLOCK_SIZE        = 50
 PROGRESS_INTERVAL = 50
 
