@@ -92,6 +92,6 @@ Structural relationships among q, s, and sl.
 
 The data was generated computationally by the .py file and sorted by section to expose geometric and arithmetic patterns within the solution space.
 
-If you have any questions, or would like to run the .py script for submission to this page please email me at cwstevens71@gmail.com and I will help walk you through the script.
+If you have any questions, or would like to run the .py script for solutions submission to this page, please email me at cwstevens71@gmail.com and I will help walk you through the script.
 
 Thank you.
