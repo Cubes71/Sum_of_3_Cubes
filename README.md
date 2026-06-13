@@ -1,4 +1,4 @@
-Sum of Three Cubes Solutions: +-- and -++ Families
+Sum of Three Cubes Solutions List: +-- and -++ Families
 
 This repository contains computed integer solutions to the Diophantine equations
 
